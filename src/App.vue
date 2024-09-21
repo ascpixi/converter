@@ -89,7 +89,7 @@ function updateValuesByBytes() {
 </script>
 
 <template>
-  <div class="card flex flex-row gap-4 m-16 justify-center font-mono">
+  <div class="card flex flex-col-reverse md:flex-row gap-4 m-16 justify-center font-mono">
     <div class="card flex flex-col gap-4">
       <NumberInputGroup label="Bytes" v-model="bytes"
         :useGrouping="useSeperators" @input="handleInputChange($event.value, Unit.Bytes)"
